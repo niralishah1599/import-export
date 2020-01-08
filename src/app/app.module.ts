@@ -13,8 +13,7 @@ import { CategoryModule } from './category/category.module';
   imports: [
   
     AppRoutingModule,
-     CategoryModule,
-  
+     CategoryModule
   
   ],
   providers: [],

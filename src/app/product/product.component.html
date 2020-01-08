@@ -1,7 +1,12 @@
-<table><td>proudctid</td><td>product name</td></table>
-<table  *ngFor="let prdt of productdetail">
-<tr><td>{{ prdt.productid }}</td>
-    
-<td>{{ prdt.productname }}</td>
+
+
+<table><tr><td>proudctid</td><td>product name</td><td>product price</td></tr>
+<tr *ngFor="let prdt of product">
+    <td>{{ prdt.productid }}</td>
+    <td>{{ prdt.productname }}</td>
+    <td *ngIf="isvalid;else price">{{ prdt.productprice }}</td>
+    <ng-template #price>
+        <td>{{ productprice }}</td>
+    </ng-template>
 </tr>
 </table>

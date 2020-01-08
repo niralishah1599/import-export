@@ -4,10 +4,13 @@ import { SharedModule } from '../shared/shared.module';
 
 
 
+
 @NgModule({
   declarations: [ProductComponent],
   imports: [
-    SharedModule
+    SharedModule,
+  
+  
   ],
   exports:[
     ProductComponent
